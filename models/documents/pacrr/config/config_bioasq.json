@@ -5,9 +5,9 @@
 
 		"WORD_EMBEDDINGS_FILE": "../../../bioasq6_data/pubmed2018_w2v_200D/pubmed2018_w2v_200D.bin",
 
-		"QRELS_TRAIN": "../../../bioasq6_data/BioASQ-trainingDataset6b.pacrr_train.json",
+		"QRELS_TRAIN": "../../../bioasq6_data/pacrr_split/BioASQ-trainingDataset6b.pacrr_train.json",
 
-		"QRELS_DEV": "../../../bioasq6_data/BioASQ-trainingDataset6b.pacrr_dev.json"
+		"QRELS_DEV": "../../../bioasq6_data/pacrr_split/BioASQ-trainingDataset6b.pacrr_dev.json"
 
 
 }
