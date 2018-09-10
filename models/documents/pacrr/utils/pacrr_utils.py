@@ -306,7 +306,7 @@ def write_bioasq_results_dict(bioasq_res_dict, retr_dir, filename):
 def bioasq_eval_custom(q_rels_file, metrics, path):
 
 	eval_res = subprocess.Popen(
-		['java', '-Xmx10G', '-cp', '$CLASSPATH:../../../bioasq_eval/flat/BioASQEvaluation/dist/BioASQEvaluation.jar', 
+		['java', '-Xmx10G', '-cp', '$CLASSPATH:../../../bioasq_eval/BioASQEvaluation.jar', 
 		'evaluation.EvaluatorTask1b', '-phaseA', '-e', '5', q_rels_file, path],
 		stdout=subprocess.PIPE, shell=False)
 
