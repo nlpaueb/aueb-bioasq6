@@ -502,9 +502,8 @@ def pacrr_train(train_pairs, dev_pairs, queries_to_rerank, term2ind, config, mod
 def pacrr_predict(scoring_model, weights_path, best_epoch, queries_to_rerank, term2ind, qrels_file, model_params, metrics, retr_dir, doc_id_prefix='', keep_topk=None, batch_num=''):
 
 	scoring_model.load_weights(weights_path)
-	rerank_res = rerank(queries_to_rerank, 'test_batch_{0}_ranking_epoch{0}'.format(best_epoch), scoring_model, qrels_file, model_params, metrics, retr_dir, doc_id_prefix, keep_topk)
+	rerank_res = rerank(queries_to_rerank, 'test_batch_{0}_ranking_epoch{0}'.format(batch_num, best_epoch), scoring_model, qrels_file, model_params, metrics, retr_dir, doc_id_prefix, keep_topk)
 	res_str = results_to_string('Test', metrics, rerank_res)
-	print('Test evaluation:')
 	print('Best epoch on dev: {0} \n{1} '.format(best_epoch, '\n'.join(res_str.split('\t'))))
 	log('|'.join(list(map(str, [best_epoch, rerank_res['map'], rerank_res['gmap'], rerank_res['f1']]))), retr_dir, 'test_log.txt')
 

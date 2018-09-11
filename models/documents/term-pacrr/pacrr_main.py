@@ -118,7 +118,9 @@ res = pacrr_train(train_pairs, dev_pairs, dev_reranking_data, term2ind, config, 
 print('Training finished.')
 
 for i in range(1, 6):
+	print('\n===========================')
 	print('Evaluating on test batch {0}'.format(i))
+	print('===========================')
 
 	with open(bm25_data_path_test[i], 'rb') as f:
 		data_test = pickle.load(f)
