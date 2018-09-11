@@ -22,6 +22,6 @@ The following data are provided (among other files):
 ```
 cd models/documents/term-pacrr
 ```
-Consult the README file of each model for dedicated instructions.
+Consult the README file of each model for dedicated instructions (e.g. [instructions for TERM-PACRR](https://github.com/nlpaueb/aueb-bioasq6/tree/master/models/documents/term-pacrr#term-pacrr)).
 
 (Under construction.)
