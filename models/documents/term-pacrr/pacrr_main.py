@@ -1,10 +1,8 @@
 import os
 import sys
 import json
-import uuid
 import copy
 import keras
-import shutil
 import pickle
 import gensim
 import random
