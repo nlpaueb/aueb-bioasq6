@@ -160,7 +160,7 @@ if __name__ == "__main__":
     params = {
         "ws": 4,
         "l2_reg": 0.0004,
-        "epoch": 3,
+        "epoch": 50,
         "max_len": 40,
         "model_type": "BCNN",
         "num_layers": 2,
